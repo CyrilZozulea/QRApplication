@@ -24,8 +24,9 @@
             Text="R"
             VerticalOptions="Center"
             HorizontalOptions="Center" />
-        <Slider ValueChanged="RSliderValue"
-                Margin="20,0,20,0" />
+        <Slider
+            ValueChanged="RSliderValue"
+            Margin="20,0,20,0" />
         <!-- 2 -->
         <Label
             x:Name="gLabelValue"
