@@ -8,10 +8,39 @@
         <Label
             x:Name="QRCodeBarcode"
             FontFamily="CCodeQR"
-            TextColor="Purple"
+            TextColor="Black"
             FontSize="6"
             Margin="50"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>
+
+        <Label Text="Choose the QR-color"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <!-- 1 -->
+        <Label
+            x:Name="rLabelValue"
+            Text="R"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Slider ValueChanged="RSliderValue"
+                Margin="20,0,20,0" />
+        <!-- 2 -->
+        <Label
+            x:Name="gLabelValue"
+            Text="G"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Slider ValueChanged="GSliderValue"
+                Margin="20,0,20,0" />
+        <!-- 3 -->
+        <Label
+            x:Name="bLabelValue"
+            Text="B"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Slider ValueChanged="BSliderValue"
+                Margin="20,0,20,0" />
     </StackLayout>
 </ContentPage>

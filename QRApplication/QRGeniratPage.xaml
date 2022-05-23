@@ -4,25 +4,27 @@
              x:Class="QRApplication.QRGeniratPage"
              Title="QR-Genirater"
              BackgroundColor="Azure">
-    <StackLayout>
-        <Image
-            IsAnimationPlaying="True"
-            WidthRequest="350"
-            HeightRequest="350"
-            Source="/Resources/Images/conoerou.jpg"
-            VerticalOptions="Start"
-            HorizontalOptions="Center"/>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="18*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
         <Entry
-            TextChanged="OnEntryChange"
-            Placeholder="Add the link for convert"
-            PlaceholderColor="Black"
-            TextColor="Coral"
-            VerticalOptions="Fill"
-            ClearButtonVisibility="Never"/>
-        <Button
-            Clicked="ConvertToQR"
-            Text="Convert to QR"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
-    </StackLayout>
+                TextChanged="OnEntryChange"
+                Placeholder="Add the link for convert"
+                PlaceholderColor="Black"
+                TextColor="Coral"
+                VerticalOptions="Center"
+                ClearButtonVisibility="Never"/>
+        <ImageButton 
+                Grid.Column="1" Grid.Row="0"
+                Clicked="ConvertToQR"
+                Source="/Resources/Images/send.png"/>
+    </Grid>
 </ContentPage>
